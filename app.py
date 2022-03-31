@@ -102,7 +102,6 @@ if st.session_state['status'] == 'completed':
     polling_response = requests.get(polling_endpoint, headers= headers)
     transcript = polling_response.json()['text']
 
-
 st.markdown(transcript)
 
 
